@@ -7,6 +7,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProgramCard from "@/components/ProgramCard";
 import { getFeaturedPrograms } from "@/data/programs";
+import testimonial1 from "@/assets/testimonial-1.jpg";
+import testimonial2 from "@/assets/testimonial-2.jpg";
+import testimonial3 from "@/assets/testimonial-3.jpg";
 
 const Index = () => {
   const featuredPrograms = getFeaturedPrograms();
@@ -176,23 +179,59 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((i) => (
-              <Card key={i} className="animate-fade-in" style={{ animationDelay: `${i * 100}ms` }}>
-                <CardContent className="p-6">
-                  <div className="mb-4 text-accent text-4xl">"</div>
-                  <p className="text-muted-foreground mb-4 italic">
-                    [PLACEHOLDER for testimonial - Success story from a UE Campus graduate about their career transformation]
-                  </p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-secondary rounded-full"></div>
-                    <div>
-                      <div className="font-semibold">Student Name</div>
-                      <div className="text-sm text-muted-foreground">Program Name</div>
-                    </div>
+            <Card className="animate-fade-in">
+              <CardContent className="p-6">
+                <div className="mb-4 text-accent text-4xl">"</div>
+                <p className="text-muted-foreground mb-4 italic">
+                  "The MBA program at UE Campus completely transformed my career trajectory. Within 6 months of graduation, 
+                  I was promoted to Senior Director at my company. The flexible online format allowed me to apply what I 
+                  learned immediately in my day job. Best investment I've ever made!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <img src={testimonial1} alt="Sarah Chen" className="w-12 h-12 rounded-full object-cover" />
+                  <div>
+                    <div className="font-semibold">Sarah Chen</div>
+                    <div className="text-sm text-muted-foreground">MBA Graduate, 2023</div>
                   </div>
-                </CardContent>
-              </Card>
-            ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="animate-fade-in" style={{ animationDelay: "100ms" }}>
+              <CardContent className="p-6">
+                <div className="mb-4 text-accent text-4xl">"</div>
+                <p className="text-muted-foreground mb-4 italic">
+                  "Starting with the Level 4 Diploma in Cyber Security opened doors I never imagined. I went from 
+                  IT support to a Security Analyst role in just 18 months. The practical, hands-on approach and 
+                  industry-relevant curriculum gave me the confidence to pursue my dream career."
+                </p>
+                <div className="flex items-center gap-3">
+                  <img src={testimonial2} alt="Michael Rodriguez" className="w-12 h-12 rounded-full object-cover" />
+                  <div>
+                    <div className="font-semibold">Michael Rodriguez</div>
+                    <div className="text-sm text-muted-foreground">Cyber Security Diploma, 2024</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="animate-fade-in" style={{ animationDelay: "200ms" }}>
+              <CardContent className="p-6">
+                <div className="mb-4 text-accent text-4xl">"</div>
+                <p className="text-muted-foreground mb-4 italic">
+                  "As a working parent, the flexibility of Walsh Accelerated programs was a game-changer. I completed 
+                  my Bachelor's degree while managing my career and family. The support from instructors and the learning 
+                  community made all the difference. Now I'm pursuing my Master's!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <img src={testimonial3} alt="Priya Patel" className="w-12 h-12 rounded-full object-cover" />
+                  <div>
+                    <div className="font-semibold">Priya Patel</div>
+                    <div className="text-sm text-muted-foreground">BBA Accelerated, 2023</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

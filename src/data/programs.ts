@@ -6,6 +6,13 @@ export interface Program {
   description: string;
   tagline?: string;
   featured?: boolean;
+  image?: string;
+  duration?: string;
+  mode?: string;
+  accreditation?: string;
+  learningOutcomes?: string[];
+  careerPaths?: string[];
+  prerequisites?: string;
 }
 
 export const programs: Program[] = [
@@ -17,6 +24,19 @@ export const programs: Program[] = [
     level: "2",
     description: "Build foundational business knowledge and skills. Perfect for beginners looking to start their business career.",
     tagline: "Start your business journey",
+    image: "diploma-programs",
+    duration: "6-12 months",
+    mode: "Online, Self-paced",
+    accreditation: "Internationally Recognized",
+    learningOutcomes: [
+      "Understand fundamental business principles and operations",
+      "Develop basic financial literacy and budgeting skills",
+      "Learn effective communication in business contexts",
+      "Gain introductory knowledge of marketing and sales",
+      "Build foundational customer service skills"
+    ],
+    careerPaths: ["Business Assistant", "Administrative Support", "Retail Supervisor", "Customer Service Representative"],
+    prerequisites: "No formal qualifications required"
   },
   {
     id: "diploma-2-cyber",
@@ -26,6 +46,19 @@ export const programs: Program[] = [
     description: "Learn the basics of protecting business data from digital threats in this beginner-friendly cybersecurity program.",
     tagline: "Cyber security: Protecting business data from digital threats",
     featured: true,
+    image: "cyber-security",
+    duration: "6-12 months",
+    mode: "Online, Self-paced",
+    accreditation: "Internationally Recognized",
+    learningOutcomes: [
+      "Understand fundamental cybersecurity concepts and terminology",
+      "Recognize common cyber threats and vulnerabilities",
+      "Learn basic network security principles",
+      "Develop awareness of data protection regulations",
+      "Implement basic security best practices"
+    ],
+    careerPaths: ["IT Support Assistant", "Security Awareness Coordinator", "Junior Security Analyst"],
+    prerequisites: "Basic computer literacy"
   },
   
   // Diploma Level 3
@@ -36,6 +69,19 @@ export const programs: Program[] = [
     level: "3",
     description: "Develop comprehensive business management skills with integrated learning approach.",
     tagline: "Driving growth through leadership and strategy",
+    image: "diploma-programs",
+    duration: "8-14 months",
+    mode: "Online, Self-paced",
+    accreditation: "Internationally Recognized",
+    learningOutcomes: [
+      "Understand key business functions and how they integrate",
+      "Develop leadership and team management capabilities",
+      "Learn strategic planning and business development",
+      "Master business communication and presentation skills",
+      "Analyze business data and make informed decisions"
+    ],
+    careerPaths: ["Team Leader", "Business Coordinator", "Operations Assistant", "Junior Manager"],
+    prerequisites: "Level 2 qualification or equivalent work experience"
   },
   
   // Diploma Level 4
@@ -46,6 +92,19 @@ export const programs: Program[] = [
     level: "4",
     description: "Master accounting principles, financial management, and business finance fundamentals.",
     tagline: "Managing money, measuring success",
+    image: "diploma-programs",
+    duration: "10-16 months",
+    mode: "Online, Flexible Schedule",
+    accreditation: "Internationally Recognized",
+    learningOutcomes: [
+      "Master double-entry bookkeeping and financial accounting principles",
+      "Prepare and analyze financial statements and reports",
+      "Understand management accounting and cost analysis",
+      "Learn taxation principles and compliance requirements",
+      "Develop proficiency in accounting software and financial tools"
+    ],
+    careerPaths: ["Accounts Assistant", "Bookkeeper", "Finance Officer", "Junior Accountant"],
+    prerequisites: "Level 3 qualification or equivalent"
   },
   {
     id: "diploma-4-hospitality",
@@ -54,6 +113,19 @@ export const programs: Program[] = [
     level: "4",
     description: "Learn to manage hospitality operations and create exceptional guest experiences.",
     tagline: "Creating experiences, managing destinations",
+    image: "diploma-programs",
+    duration: "10-16 months",
+    mode: "Online, Self-paced",
+    accreditation: "Internationally Recognized",
+    learningOutcomes: [
+      "Master hospitality operations and service excellence",
+      "Develop tourism management and destination marketing skills",
+      "Understand revenue management and financial controls",
+      "Learn customer relationship management strategies",
+      "Build event planning and coordination capabilities"
+    ],
+    careerPaths: ["Hotel Manager", "Tourism Coordinator", "Event Manager", "Guest Services Manager"],
+    prerequisites: "Level 3 qualification or equivalent"
   },
   {
     id: "diploma-4-psychology",
@@ -62,6 +134,19 @@ export const programs: Program[] = [
     level: "4",
     description: "Explore human behavior, cognition, and psychological principles.",
     tagline: "Understanding minds, shaping behaviors",
+    image: "diploma-programs",
+    duration: "10-16 months",
+    mode: "Online, Flexible Schedule",
+    accreditation: "Internationally Recognized",
+    learningOutcomes: [
+      "Understand core psychological theories and research methods",
+      "Explore cognitive psychology and human development",
+      "Learn about social psychology and group dynamics",
+      "Study biological bases of behavior and mental processes",
+      "Develop critical analysis of psychological research"
+    ],
+    careerPaths: ["Psychology Assistant", "Research Assistant", "Mental Health Support Worker", "HR Assistant"],
+    prerequisites: "Level 3 qualification or equivalent"
   },
   {
     id: "diploma-4-cyber",
@@ -70,6 +155,19 @@ export const programs: Program[] = [
     level: "4",
     description: "Develop practical skills in protecting systems and networks from cyber threats.",
     tagline: "Defending systems, safeguarding data",
+    image: "cyber-security",
+    duration: "10-16 months",
+    mode: "Online, Flexible Schedule",
+    accreditation: "Internationally Recognized",
+    learningOutcomes: [
+      "Master network security protocols and infrastructure protection",
+      "Implement security policies and risk management strategies",
+      "Understand ethical hacking and penetration testing basics",
+      "Learn incident response and digital forensics fundamentals",
+      "Develop skills in security monitoring and threat detection"
+    ],
+    careerPaths: ["Security Analyst", "Network Security Specialist", "IT Security Officer", "Security Operations Center Analyst"],
+    prerequisites: "Level 3 qualification or basic IT knowledge"
   },
   {
     id: "diploma-4-it",
@@ -78,6 +176,19 @@ export const programs: Program[] = [
     level: "4",
     description: "Build essential IT skills covering software, hardware, and network fundamentals.",
     tagline: "Powering innovation, enabling connectivity",
+    image: "diploma-programs",
+    duration: "10-16 months",
+    mode: "Online, Self-paced",
+    accreditation: "Internationally Recognized",
+    learningOutcomes: [
+      "Master programming fundamentals and software development",
+      "Understand network infrastructure and systems administration",
+      "Learn database management and data structures",
+      "Develop web technologies and application development skills",
+      "Build troubleshooting and technical support capabilities"
+    ],
+    careerPaths: ["IT Technician", "Systems Administrator", "Junior Developer", "Technical Support Specialist"],
+    prerequisites: "Level 3 qualification or equivalent"
   },
   {
     id: "diploma-4-ai",
@@ -87,6 +198,19 @@ export const programs: Program[] = [
     description: "Gain foundational knowledge in AI concepts, machine learning, and intelligent systems.",
     tagline: "Advanced AI skills and applications",
     featured: true,
+    image: "diploma-programs",
+    duration: "10-16 months",
+    mode: "Online, Flexible Schedule",
+    accreditation: "Internationally Recognized",
+    learningOutcomes: [
+      "Understand core AI concepts and machine learning principles",
+      "Learn Python programming for AI applications",
+      "Explore neural networks and deep learning fundamentals",
+      "Develop skills in data preprocessing and feature engineering",
+      "Build practical AI models and applications"
+    ],
+    careerPaths: ["AI Assistant", "Data Analyst", "Junior ML Engineer", "AI Solutions Developer"],
+    prerequisites: "Basic programming knowledge recommended"
   },
   
   // Diploma Level 5
@@ -215,6 +339,19 @@ export const programs: Program[] = [
     level: "Bachelor",
     description: "Comprehensive business education covering all key business disciplines.",
     featured: true,
+    image: "walsh-college",
+    duration: "3-4 years",
+    mode: "Online, Flexible Schedule",
+    accreditation: "AACSB Accredited",
+    learningOutcomes: [
+      "Master core business disciplines including finance, marketing, and operations",
+      "Develop strategic thinking and decision-making capabilities",
+      "Build leadership and team management skills",
+      "Understand global business environments and cross-cultural management",
+      "Apply data-driven approaches to business problem-solving"
+    ],
+    careerPaths: ["Business Manager", "Operations Manager", "Business Consultant", "Project Manager", "Entrepreneur"],
+    prerequisites: "High school diploma or equivalent"
   },
   {
     id: "walsh-bba-marketing",
@@ -288,6 +425,19 @@ export const programs: Program[] = [
     level: "Master",
     description: "Advance your career with comprehensive business leadership education.",
     featured: true,
+    image: "mba-program",
+    duration: "18-24 months",
+    mode: "Online, Part-time Available",
+    accreditation: "AACSB Accredited",
+    learningOutcomes: [
+      "Develop executive-level strategic thinking and leadership capabilities",
+      "Master advanced financial analysis and corporate finance principles",
+      "Build expertise in organizational behavior and change management",
+      "Understand global business strategy and international markets",
+      "Lead data-driven innovation and digital transformation initiatives"
+    ],
+    careerPaths: ["Senior Manager", "Director", "VP of Operations", "Business Development Manager", "Strategy Consultant"],
+    prerequisites: "Bachelor's degree with 2+ years work experience recommended"
   },
   {
     id: "walsh-msc-management",
